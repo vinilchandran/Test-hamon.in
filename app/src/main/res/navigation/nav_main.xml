@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.screeningapp.view.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_openSubject"
+            app:destination="@id/subjectFragment" />
+        <action
+            android:id="@+id/action_openStudent"
+            app:destination="@id/studentFragment" />
+        <action
+            android:id="@+id/action_openClassRoom"
+            app:destination="@id/classRoomFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/subjectFragment"
+        android:name="com.example.screeningapp.view.SubjectFragment"
+        android:label="fragment_subject"
+        tools:layout="@layout/fragment_subject" >
+        <action
+            android:id="@+id/action_openSubjectDetails"
+            app:destination="@+id/subjectDetailsFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/studentFragment"
+        android:name="com.example.screeningapp.view.StudentFragment"
+        android:label="fragment_student"
+        tools:layout="@layout/fragment_student" >
+        <action
+            android:id="@+id/action_openStudent"
+            app:destination="@id/studentDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/classRoomFragment"
+        android:name="com.example.screeningapp.view.ClassRoomFragment"
+        android:label="fragment_class_room"
+        tools:layout="@layout/fragment_class_room" >
+        <action
+            android:id="@+id/action_openClassRoom"
+            app:destination="@id/classRoomDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/subjectDetailsFragment"
+        android:name="com.example.screeningapp.view.SubjectDetailsFragment"
+        android:label="SubjectDetailsFragment"
+        tools:layout="@layout/fragment_subject_details" >
+        <argument
+            android:name="subject"
+            app:argType="com.example.screeningapp.model.Subject"/>
+    </fragment>
+    <fragment
+        android:id="@+id/studentDetailsFragment"
+        android:name="com.example.screeningapp.view.StudentDetailsFragment"
+        android:label="StudentDetailsFragment" >
+        <argument
+            android:name="student"
+            app:argType="com.example.screeningapp.model.Student" />
+    </fragment>
+    <fragment
+        android:id="@+id/classRoomDetailsFragment"
+        android:name="com.example.screeningapp.view.ClassRoomDetailsFragment"
+        android:label="ClassRoomDetailsFragment" >
+        <argument
+            android:name="classroom"
+            app:argType="com.example.screeningapp.model.ClassRoom"/>
+    </fragment>
+</navigation>

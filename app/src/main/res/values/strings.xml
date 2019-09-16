@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">ScreeningApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="subjects">subjects</string>
+    <string name="subject">subject</string>
+    <string name="subject_details">subject details</string>
+    <string name="students">students</string>
+    <string name="student">student</string>
+    <string name="student_details">student details</string>
+    <string name="classroom">classroom</string>
+    <string name="classroom_details">classroom details</string>
+    <string name="classrooms">classrooms</string>
+    <string name="my_school">My SCHOOL</string>
+
+
+    <string name="arg_subject_id">subject_id</string>
+    <string name="arg_student_id">student_id</string>
+    <string name="arg_classroom_id">classroom_id</string>
+
+    <string name="subject_credits">CREDITS : %1$d</string>
+    <string name="subject_teacher">TEACHER : %1$s</string>
+
+    <string name="student_email">EMAIL : %1$s</string>
+    <string name="student_age">AGE : %1$d</string>
+    <string name="student_classroom">CLASSROOM : %1$s</string>
+    <string name="select">SELECT</string>
+
+    <string name="class_size">SIZE : %1$d</string>
+    <string name="class_subject">SUBJECT : %1$d</string>
+</resources>

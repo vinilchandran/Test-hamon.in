@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="paddingHorizontalButton">20dp</dimen>
+    <dimen name="padding_normal">8dp</dimen>
+    <dimen name="listItemTextSize">18sp</dimen>
+    <dimen name="textSizeSubjectTitle">24sp</dimen>
+    <dimen name="textSizeSubjectDescription">16dp</dimen>
+    <dimen name="textSizeMainButton">22sp</dimen>
+</resources>
